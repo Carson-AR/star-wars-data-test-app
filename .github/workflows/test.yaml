@@ -1,0 +1,13 @@
+name: test
+run-name: ${{ github.actor }} is testing 🚀
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: install pytest
+        run: pip install pytest
+      - name: test
+        run: pytest
