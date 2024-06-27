@@ -2,7 +2,7 @@ name: format validation
 run-name: ${{ github.actor }} is validating actoins 🚀
 on: [push]
 jobs:
-  format validation:
+  format_validation:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
