@@ -10,6 +10,7 @@ jobs:
       - name: install ruff
         run: pip install ruff
       - name: lint
-        run: ruff check
+        run: ruff check -v
+
       - name: format
-        run: ruff format
+        run: ruff format -v
