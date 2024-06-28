@@ -1,5 +1,7 @@
 from data import fetch_people
 from utilities import find_person
+from data import fetch_space_ships
+from utilities import find_space_ship
 
 
 def test_find_luke():
@@ -12,3 +14,9 @@ def test_find_fred():
     people = fetch_people()
     person = find_person(people, "fred")
     assert person is None, "unexpectedly found fred"
+
+
+def test_find_death():
+    space_ships = fetch_space_ships()
+    space_ship = find_space_ship(space_ships, "death")
+    assert space_ship is not None, "failed to find death"
