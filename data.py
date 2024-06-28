@@ -120,7 +120,7 @@ def fetch_people():
     return responce.json()["results"]
 
 
-def fetch_space_ship():
+def fetch_space_ships():
     space_ships = requests.get("https://swapi.dev/api/starships/")
 
     return space_ships.json()["results"]
