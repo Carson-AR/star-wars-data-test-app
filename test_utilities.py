@@ -17,6 +17,6 @@ def test_find_fred():
 
 
 def test_find_death():
-    space_ships = find_space_ship()
-    space_ship = fetch_space_ship(space_ships, "death")
+    space_ships = fetch_space_ship()
+    space_ship = find_space_ship(space_ships, "death")
     assert space_ship is not None, "failed to find death"
