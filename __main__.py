@@ -1,9 +1,7 @@
-from questoin import question
 from data import fetch_people
 from utilities import find_person
 from data import fetch_space_ship
 from utilities import find_space_ship
-from questoin import ship_question
 
 name = input("what person or ship would you like")
 # question()
